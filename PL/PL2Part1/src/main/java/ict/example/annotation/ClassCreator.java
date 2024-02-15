@@ -1,5 +1,4 @@
 package ict.example.annotation;
-
 import ict.example.annotation.domain.ClassDto;
 import ict.example.annotation.domain.FieldDto;
 import javax.annotation.processing.ProcessingEnvironment;

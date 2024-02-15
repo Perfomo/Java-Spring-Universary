@@ -1,6 +1,6 @@
 package com.toleyko.servlets;
 
-import com.toleyko.service.FontServiveImpl;
+import com.toleyko.service.FontServiceImpl;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebServlet(name = "FontExamples", urlPatterns = "/fontExamples/*")
 public class FontExamples extends HttpServlet {
 
-    private FontServiveImpl fontServive = new FontServiveImpl();
+    private FontServiceImpl fontServive = new FontServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

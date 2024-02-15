@@ -1,5 +1,4 @@
 package ict.example.annotation.domain;
-
 public class FieldDto {
     private final String fieldStringName;
     private final String fieldName;

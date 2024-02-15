@@ -1,5 +1,4 @@
 package ict.example.useannotation;
-
 import ict.example.annotation.FieldNames;
 @FieldNames
 public class TestEntity {

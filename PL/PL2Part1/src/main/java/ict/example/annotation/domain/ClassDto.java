@@ -1,6 +1,7 @@
 package ict.example.annotation.domain;
 
 import java.util.Set;
+
 public class ClassDto {
     private String className;
     private Set<FieldDto> fields;

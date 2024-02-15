@@ -1,13 +1,11 @@
 package com.toleyko.servlets;
 
 import com.toleyko.dao.CollectionSearchDAOImpl;
-import com.toleyko.dao.FileSearchDaoImpl;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 
 @WebServlet(name = "CollectionSearch", urlPatterns = "/collectionSearch/*")
@@ -54,7 +52,7 @@ public class CollectionSearch extends HttpServlet {
                     }
                     else {
                         collectionSearchDAO.changeInfo(findInfo, newValueInfo);
-                        res = "Info from key + '" + findInfo + "' changed from " + prevInfoVal + " to " + newValueInfo;
+                        res = "Info from key '" + findInfo + "' changed from " + prevInfoVal + " to " + newValueInfo;
                     }
                     req.setAttribute("res", res);
                     req.getRequestDispatcher("jsp-resources/showWordFreq.jsp").forward(req, resp);

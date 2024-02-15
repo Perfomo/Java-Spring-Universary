@@ -2,12 +2,9 @@ package com.toleyko.dao;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
 import java.util.Scanner;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public class FileSearchDaoImpl implements FileSearchDAO {
     final private String FILE_NAME = "wordBD.txt";
 

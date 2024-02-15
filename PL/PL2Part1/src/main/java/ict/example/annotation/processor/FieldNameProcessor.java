@@ -1,5 +1,4 @@
 package ict.example.annotation.processor;
-
 import com.google.auto.service.AutoService;
 import com.google.common.base.CaseFormat;
 import ict.example.annotation.ClassCreator;
@@ -19,7 +18,7 @@ import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 @SupportedAnnotationTypes("ict.example.annotation.FieldNames")
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
+@SupportedSourceVersion(SourceVersion.RELEASE_11)
 @AutoService(Processor.class)
 public class FieldNameProcessor extends AbstractProcessor {
     @Override
@@ -59,4 +58,3 @@ public class FieldNameProcessor extends AbstractProcessor {
         return String.join(".", Arrays.copyOf(split, split.length - 1));
     }
 }
-
