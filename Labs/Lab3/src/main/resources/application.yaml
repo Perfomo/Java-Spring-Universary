@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Lab3-service
+  datasource:
+    url: jdbc:mariadb://localhost:3306/my_rest_lab3_db
+    username: bestuser
+    password: bestuser
+    driver-class-name: org.mariadb.jdbc.Driver
+
+server:
+  port: ${LAB3_SERVICE_PORT:8080}
+
+
